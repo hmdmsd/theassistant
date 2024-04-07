@@ -1,0 +1,42 @@
+<div class="m-4">
+    <div class="flex flex-col mx-2 md:flex-row justify-around space-x-4 items-start">
+        <div class="teachers">
+            <h2 class="font-bold text-xl mb-5">Teachers</h2>
+            <div *ngFor="let user of teachers"
+                class="flex flex-col justify-start items-start space-y-4 my-2 p-4 w-96 border rounded-xl shadow-lg shadow-gray-300">
+                <div class="flex flex-row justify-between w-full space-x-6 items-center">
+                    <h3 class=" font-bold">{{ user.firstName }} {{ user.lastName }}</h3>
+                    <p [ngClass]="{ 'red-background': user.assignment === 'Transfiguration', 'blue-background': user.assignment === 'Charms','yellow-background': user.assignment === 'Herbology','green-background': user.assignment === 'Potions' }"
+                        class=" rounded-3xl text-white bg-red-700 px-3 text-[12px]">{{ user.assignment }}</p>
+                </div>
+                <p *ngIf="user.description">{{ user.description }}</p>
+                <div class="flex flex-row justify-start space-x-1 items-center">
+                    <span class="material-icons-round">calendar_month</span>
+                    <p class="text-[12px]" *ngIf="user.arrivalDate">
+                        {{ user.arrivalDate }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="font-bold text-xl mb-5 ">Students</h2>
+            <div class="students grid grid-cols-1 xl:grid-cols-2 gap-2">
+
+                <div *ngFor="let user of students"
+                    class="flex flex-col justify-start items-start space-y-4 p-4 w-96 border rounded-xl shadow-lg shadow-gray-300">
+                    <div class="flex flex-row justify-between w-full space-x-6 items-center">
+                        <h3 class="font-bold">{{ user.firstName }} {{ user.lastName }}</h3>
+                        <p [ngClass]="{ 'red-background': user.house === 'Gryffindor', 'green-background': user.house !== 'Gryffindor' }"
+                            class="rounded-3xl text-white bg-red-700 px-3 text-sm">{{ user.house }}</p>
+                    </div>
+                    <p *ngIf="user.description">{{ user.description }}</p>
+                    <div class="flex flex-row justify-start space-x-1 items-center">
+                        <span class="material-icons-round">calendar_month</span>
+                        <p class="text-sm" *ngIf="user.arrivalDate">{{ user.arrivalDate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
