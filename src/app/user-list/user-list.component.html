@@ -7,7 +7,8 @@
                 <div class="flex flex-row justify-between w-full space-x-6 items-center">
                     <h3 class=" font-bold">{{ user.firstName }} {{ user.lastName }}</h3>
                     <p [ngClass]="{ 'red-background': user.assignment === 'Transfiguration', 'blue-background': user.assignment === 'Charms','yellow-background': user.assignment === 'Herbology','green-background': user.assignment === 'Potions' }"
-                        class=" rounded-3xl text-white bg-red-700 px-3 text-[12px]">{{ user.assignment }}</p>
+                        class=" rounded-3xl text-white bg-red-700 px-3 w-28 text-center text-[12px]">{{ user.assignment
+                        }}</p>
                 </div>
                 <p *ngIf="user.description">{{ user.description }}</p>
                 <div class="flex flex-row justify-start space-x-1 items-center">
@@ -27,7 +28,8 @@
                     <div class="flex flex-row justify-between w-full space-x-6 items-center">
                         <h3 class="font-bold">{{ user.firstName }} {{ user.lastName }}</h3>
                         <p [ngClass]="{ 'red-background': user.house === 'Gryffindor', 'green-background': user.house !== 'Gryffindor' }"
-                            class="rounded-3xl text-white bg-red-700 px-3 text-sm">{{ user.house }}</p>
+                            class="rounded-3xl text-white bg-red-700 px-3 w-20 text-center text-[12px]">{{ user.house }}
+                        </p>
                     </div>
                     <p *ngIf="user.description">{{ user.description }}</p>
                     <div class="flex flex-row justify-start space-x-1 items-center">
