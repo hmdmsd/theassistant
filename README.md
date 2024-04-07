@@ -1,10 +1,11 @@
 # Angular Single Page Application - Technical Test
 
-This repository contains code for a single-page web application developed using Angular. The application is created as part of a technical test to reproduce a design provided in Figma using data stored in a JSON format.
+This repository contains code for a single-page web application developed using Angular.
+The application is created as part of a technical test to reproduce a design provided in Figma using data stored in a JSON format.
 
 ## Instructions
 
-To run this application locally or deploy it on GitHub Pages, follow these steps:
+To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine using Git: `git clone https://github.com/hmdmsd/theassistant.git`
 2. Navigate to the project directory: `cd theassistant`
