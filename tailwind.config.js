@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Orelega: ["Orelega One", "serif"],
+        Lato: ["Lato", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

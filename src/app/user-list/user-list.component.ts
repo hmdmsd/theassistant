@@ -28,6 +28,10 @@ export class UserListComponent {
         } else {
           return a.firstName.localeCompare(b.firstName);
         }
+      })
+      .map((user) => {
+        user.arrivalDate = this.calculateYearOfStudy(user.arrivalDate);
+        return user;
       });
   }
 
@@ -47,5 +51,21 @@ export class UserListComponent {
     );
 
     return date1Obj.getTime() - date2Obj.getTime();
+  }
+
+  calculateYearOfStudy(arrivalDate: string): string {
+    const currentDate = new Date("1991-11-12"); // current date is 12 November 1991
+    const arrival = new Date(arrivalDate);
+    const difference = currentDate.getFullYear() - arrival.getFullYear();
+
+    if (difference === 0) {
+      return "First Year";
+    } else if (difference === 1) {
+      return "Second Year";
+    } else if (difference === 2) {
+      return "Third Year";
+    } else {
+      return "Unknown";
+    }
   }
 }

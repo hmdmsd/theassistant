@@ -1,15 +1,15 @@
 .red-background {
-  background-color: hsl(348, 85%, 47%);
+  background-color: hsl(0, 85%, 50%);
 }
 
 .green-background {
-  background-color: hsl(125, 93%, 37%);
+  background-color: hsl(168, 50%, 45%);
 }
 
 .yellow-background {
-  background-color: hsl(60, 90%, 31%);
+  background-color: hsl(53, 76%, 40%);
 }
 
 .blue-background {
-  background-color: hsl(220, 82%, 46%);
+  background-color: hsl(213, 69%, 43%);
 }

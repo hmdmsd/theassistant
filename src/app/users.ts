@@ -14,7 +14,7 @@ export const users = [
     id: 163728,
     firstName: "Minerva",
     lastName: "McGonagall",
-    description: "Transfiguration teacher and head of Gryffindor",
+    description: "Transfiguration teacher and head of Gryffindor.",
     arrivalDate: "08/09/1956",
     house: "Gryffindor",
     assignment: "Transfiguration",
@@ -42,7 +42,7 @@ export const users = [
     id: 409232,
     firstName: "Severus",
     lastName: "Snape",
-    description: "Potions teacher and head of Slytherin",
+    description: "Potions teacher and head of Slytherin.",
     arrivalDate: "04/09/1984",
     house: "Slytherin",
     assignment: "Potions",
@@ -52,7 +52,7 @@ export const users = [
     id: 910832,
     firstName: "Harry",
     lastName: "Potter",
-    description: "Quidditch seeker. \n The boy who lived",
+    description: "Quidditch seeker. \n The boy who lived.",
     arrivalDate: "01/09/1991",
     house: "Gryffindor",
     isTeacher: false,
@@ -70,7 +70,7 @@ export const users = [
     id: 309233,
     firstName: "Pomona",
     lastName: "Sprout",
-    description: "Herbology teacher and head of Hufflepuff",
+    description: "Herbology teacher and head of Hufflepuff.",
     arrivalDate: "03/09/1982",
     house: "Hufflepuff",
     assignment: "Herbology",
@@ -110,7 +110,7 @@ export const users = [
     id: 492893,
     firstName: "Filius",
     lastName: "Flitwick",
-    description: "Charms teacher and head of Ravenclaw",
+    description: "Charms teacher and head of Ravenclaw.",
     arrivalDate: "01/09/1971",
     house: "Ravenclaw",
     assignment: "Charms",
@@ -126,9 +126,3 @@ export const users = [
     isTeacher: false,
   },
 ];
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
