@@ -1,27 +1,32 @@
-# Theassistant
+# Angular Single Page Application - Technical Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+This repository contains code for a single-page web application developed using Angular. The application is created as part of a technical test to reproduce a design provided in Figma using data stored in a JSON format.
 
-## Development server
+## Instructions
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To run this application locally or deploy it on GitHub Pages, follow these steps:
 
-## Code scaffolding
+1. Clone this repository to your local machine using Git: `git clone https://github.com/hmdmsd/theassistant.git`
+2. Navigate to the project directory: `cd theassistant`
+3. Install the necessary dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open your web browser and navigate to `http://localhost:4200` to view the application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Design Reproduction
 
-## Build
+The application reproduces the design provided in Figma. It utilizes Angular components to organize and display data fetched from a JSON file. The layout includes sections for teachers and students, with sorting and styling based on specified criteria.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Code Structure
 
-## Running unit tests
+- `src/app/user-list`: Contains the Angular component responsible for displaying the list of users.
+- `src/app/users.ts`: Defines the TypeScript interfaces and data for users, including teachers and students.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Additional Information
 
-## Running end-to-end tests
+- **Date:** The current date is set to November 12, 1991, for demonstration purposes.
+- **Teacher Order:** Teachers are displayed in order of seniority within the school.
+- **Student Order:** Students are displayed first by house and then alphabetically within each house.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
